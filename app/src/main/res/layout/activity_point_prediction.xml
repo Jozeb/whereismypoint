@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        tools:context="com.teamfegit.wheresmypoint.PointPredictionActivity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/text_hours"
+                android:layout_width="@dimen/box_size1"
+                android:layout_height="@dimen/box_size1"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                android:background="@color/colorEdit2"
+                android:gravity="center"
+                android:hint="hh"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/text_mins"
+                android:layout_width="@dimen/box_size1"
+                android:layout_height="@dimen/box_size1"
+                android:layout_margin="5dp"
+                android:background="@color/colorEdit2"
+                android:inputType="number"
+                android:gravity="center"
+                android:hint="mm"
+                android:textSize="25sp" />
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="predict"/>
+
+    </LinearLayout>
+
+</LinearLayout>
